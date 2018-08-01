@@ -1,0 +1,19 @@
+<h1><%= @restaurant.name %></h1>
+
+<p>
+  <strong>Address:</strong>
+  <%= @restaurant.address %>
+</p>
+
+<p>
+  <strong>Phone Number:</strong>
+  <%= @restaurant.phone_number %>
+</p>
+
+<dir>
+  <%= link_to 'Add a new review', new_restaurant_review_path(@restaurant), class: 'btn btn-warning' %>
+</dir>
+
+
+<%= link_to 'Back', restaurants_path %>
+
